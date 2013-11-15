@@ -1,0 +1,16 @@
+{
+	"imports": {
+		"b": ["tests/echo", { "$message": "$foo" }]
+	},
+	"parameters": {
+		"foo": "This is a test message"
+	},
+	"services": {
+		"test": {
+			"class": ["A", ["b.printer"]]
+		}
+	},
+	"exports": {
+		"a": "test"
+	}
+}

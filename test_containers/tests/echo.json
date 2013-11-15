@@ -1,0 +1,13 @@
+{
+	"uses": [
+		"$message"
+	],
+	"services": {
+		"printer": {
+			"class": "EchoClass"
+		}
+	},
+	"exports": {
+		"printer": "printer"
+	}
+}
